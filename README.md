@@ -32,9 +32,9 @@ I selected 3 hyperparameters to find the best configurations. These where:
 
 Remember that your README should:
 - Include a screenshot of completed training jobs:
-a) Initial training job based on hpo.py file 
+* Initial training job based on hpo.py file 
 ![Training job using hpo.py](./training_job_hpo.JPG)
-b) Final training with selected hyperparameters using the train_model.py
+* Final training with selected hyperparameters using the train_model.py
 ![Training job with final hyperparameters](./training_job_finalparameters.JPG)
 
 - Logs metrics during the training process: These are include inside train_and_deploy_model.ipynb
@@ -145,5 +145,5 @@ predictor = model.deploy(
     instance_type="ml.m5.xlarge"
 )
 ```
-The example prediction is visible below
+- The example prediction is visible below
 ![dog_prediction.JPG](./dog_prediction.JPG)
