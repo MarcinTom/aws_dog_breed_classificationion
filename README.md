@@ -149,4 +149,5 @@ predictor = model.deploy(
 )
 ```
 - The example prediction is visible below
+  
 ![dog_prediction.JPG](./dog_prediction.JPG)
