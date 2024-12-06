@@ -78,7 +78,9 @@ tuner.fit({"training": inputs}, wait=True)
 
 ## Debugging and Profiling
 **TODO**: Give an overview of how you performed model debugging and profiling in Sagemaker
+
 To create debugging anf profiling data I installed and imported the smdebug module. Then setup hooks inside the training script. Then in the the Jupyter Notebook file  I created debugger and profiler configurations. 
+
 ```
 rules = [
     Rule.sagemaker(rule_configs.vanishing_gradient()),
@@ -117,16 +119,17 @@ estimator_deb = PyTorch(
 
 ### Results
 **TODO**: What are the results/insights did you get by profiling/debugging your model?
+
 **Debugger**: Revealed PoorWeightInitialization issue.
 **Profiler** Revealed existence of several outliers in the dataset
 
-Profiler report available here: [Report](./profiler-report.html)
-
 **TODO** Remember to provide the profiler html/pdf file in your submission.
-Added to the project code as profiler-report.html
+
+Profiler report available here: [Report](./profiler-report.html)
 
 ## Model Deployment
 **TODO**: Give an overview of the deployed model and instructions on how to query the endpoint with a sample input.
+
 - The Sagemaker estimator model is deployed to a sagemaker maker endpoint on machine of instance-type: ml.m5.xlarge using deploy_model.py
 ![working_endpoint.JPG](./working_endpoint.JPG)
 
