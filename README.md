@@ -33,9 +33,9 @@ I selected 3 hyperparameters to find the best configurations. These where:
 Remember that your README should:
 - Include a screenshot of completed training jobs:
 a) Initial training job based on hpo.py file 
-![training_job_hpo.JPG]
+![Training job using hpo.py](./training_job_hpo.JPG)
 b) Final training with selected hyperparameters using the train_model.py
-![training_job_finalparameters.JPG]
+![Training job with final hyperparameters](./training_job_finalparameters.JPG)
 
 - Logs metrics during the training process: These are include inside train_and_deploy_model.ipynb
 - Tune at least two hyperparameters: 3 hyperparameters were chosen for tunning
@@ -128,7 +128,7 @@ Added to the project code as profiler-report.html
 ## Model Deployment
 **TODO**: Give an overview of the deployed model and instructions on how to query the endpoint with a sample input.
 - The Sagemaker estimator model is deployed to a sagemaker maker endpoint on machine of instance-type: ml.m5.xlarge using deploy_model.py
-![working_endpoint.JPG]
+![working_endpoint.JPG](./working_endpoint.JPG)
 
 - The images can be send to the estimator created by the below code
 ```
@@ -146,4 +146,4 @@ predictor = model.deploy(
 )
 ```
 The example prediction is visible below
-![dog_prediction.JPG]
+![dog_prediction.JPG](./dog_prediction.JPG)
