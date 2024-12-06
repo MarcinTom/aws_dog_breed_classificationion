@@ -209,11 +209,10 @@ def main(args):
     test(model, test_loader, loss_criterion, device, logger, hook)
     logger.info("Model testing completed")
 
-  
     # Save the trained model
     logger.info("Saving the model")
     path = os.path.join(args.model_dir, "model.pth")
-    torch.save(model, path)
+    torch.save(model.state_dict(), path)
     logger.info("Model data saved")
 
 if __name__=='__main__':
