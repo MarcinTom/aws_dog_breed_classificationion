@@ -120,8 +120,8 @@ estimator_deb = PyTorch(
 ### Results
 **TODO**: What are the results/insights did you get by profiling/debugging your model?
 
-**Debugger**: Revealed PoorWeightInitialization issue.
-**Profiler** Revealed existence of several outliers in the dataset
+* **Debugger**: Revealed PoorWeightInitialization issue.
+* **Profiler** Revealed existence of several outliers in the dataset
 
 **TODO** Remember to provide the profiler html/pdf file in your submission.
 
