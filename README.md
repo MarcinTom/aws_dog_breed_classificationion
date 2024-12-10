@@ -154,7 +154,7 @@ estimator_deb = PyTorch(
 
 ### Results
 Below graph represents the training loss values captured during the model training and validation process:
-['loss_graph'](./loss_graph.jpeg)
+!['loss_graph'](./loss_graph.jpeg)
 
 **Insights from the plot**
 - The training loss initially increases within small number of steps but then significantly decreases with the higher number of steps.
