@@ -20,7 +20,7 @@ Upload the data to an S3 bucket through the AWS Gateway so that SageMaker has ac
 ### Structure of the project
 The project contain several files required for model creation, training and deployment:
 * `hpo.py` - used for original model creation with set of hyperparameters to tune (afterwards extended by the debugging and profiling code)
-* `train_model.py` - used for debugger and profiler creation with selected hyperparameters set from previous training based on hpo.py
+* `train_model.py` - used for debugger and profiler creation with selected hyperparameters set from previous training based on `hpo.py`
 * `deploy_model.py` - used for code deployment (originally I tried to use common file from train and deployment but after getting sevral errors and based on Knowledge Udacity site I decided to seprarate the deployment code)
 * `train_and_depoy.ipynb` - code with overall project configuration and step by step setup
 
@@ -41,7 +41,7 @@ Remember that your README should:
 
 - Logs metrics during the training process: These are include inside `train_and_deploy_model.ipynb`
 - Tune at least two hyperparameters: 3 hyperparameters were chosen for tunning
-- Retrieve the best best hyperparameters from all your training jobs: as per `train_and_deploy_model.ipynb` these are {'batch-size': 128, 'lr': '0.008328295873680674', 'epochs': 3}
+- Retrieve the best best hyperparameters from all your training jobs: as per `train_and_deploy_model.ipynb` these are `{'batch-size': 128, 'lr': '0.008328295873680674', 'epochs': 3}`
 
 The above results were done based on the below estimator code
 ```
@@ -154,7 +154,7 @@ estimator_deb = PyTorch(
 
 ### Results
 Below graph represents the training loss values captured during the model training and validation process:
-['loss_graph'](./loss__graph.jpeg)
+['loss_graph'](./loss_graph.jpeg)
 
 **Insights from the plot**
 - The training loss initially increases within small number of steps but then significantly decreases with the higher number of steps.
